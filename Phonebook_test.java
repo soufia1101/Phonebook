@@ -42,6 +42,14 @@ public class Phonebook_test {
         String expectedOutput = "Name: Jo March - Phone number: 09962223344";
         assertEquals(expectedOutput, person.toString());
     }
+    @Test
+    public void testIdUniqueness() {
+        Person person1 = new Person("Person1", "09111111111");
+        Person person2 = new Person("Person2", "09222222222");
+
+        assertNotEquals(person1.getId(), person2.getId());
+    }
+
 
 
 
