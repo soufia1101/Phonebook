@@ -17,5 +17,12 @@ public class Phonebook_test {
         person.setName("Jo March");
         assertEquals("Jo March", person.getName());
     }
+    @Test
+    public void testSetPhone_ValidNumber() {
+        Person person = new Person("Jo March", "09962223344");
+        person.setPhone("09112163845");
+        assertEquals("09112163845", person.getPhone());
+    }
+
 
 }
