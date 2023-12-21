@@ -29,6 +29,14 @@ public class Phonebook_test {
         person.setHidden();
         assertTrue(person.isHidden());
     }
+    @Test
+    public void testSetUnHidden() {
+        Person person = new Person("Jo March", "09962223344");
+        person.setHidden();
+        person.setUnHidden();
+        assertFalse(person.isHidden());
+    }
+
 
 
 
