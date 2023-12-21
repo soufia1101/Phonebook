@@ -23,6 +23,13 @@ public class Phonebook_test {
         person.setPhone("09112163845");
         assertEquals("09112163845", person.getPhone());
     }
+    @Test
+    public void testSetHidden() {
+        Person person = new Person("Jo March", "09962223344");
+        person.setHidden();
+        assertTrue(person.isHidden());
+    }
+
 
 
 }
